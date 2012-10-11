@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo -n "How old are you?"
+read age
+echo "Wowo, in $((30-age)) years, you'll be 30!"
