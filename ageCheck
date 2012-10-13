@@ -1,5 +1,25 @@
 #!/bin/bash
 
-echo -n "How old are you?"
-read age
-echo "Wowo, in $((30-age)) years, you'll be 30!"
+echo -n "Enter the birthdate (dd-mm-yyyy): "
+read bdate
+
+bday=${bdate:0:2}
+bmonth=${bdate:3:2}
+byear=${bdate:6:4}
+
+#current date
+cdate=`date +%d-%m-%Y`
+
+cday=${cdate:0:2}
+cmonth=${cdate:3:2}
+cyear=${cdate:6:4}
+
+if [[ "$cmonth" -lt "$bmonth" ]] || [[ "$cmonth" -eq "$bmonth" && "$cday" -lt "$bday" ]]
+then
+    let age=cyear-byear-1
+else
+    let age=cyear-byear
+fi
+
+echo "Your Age = "$age
+echo "Wow, in $(( 30-$age )) years, you'll be 30!"
