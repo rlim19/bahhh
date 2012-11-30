@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# FOR UNIX MAC!
 # util to compute your age, 
 # years before reaching 30, 
 # and days till your birthdate

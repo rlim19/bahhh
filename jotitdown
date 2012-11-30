@@ -1,4 +1,4 @@
-#/bin/sh -i
+#/bin/sh 
 
 #add note entries to the file
 #$HOME/note-file

@@ -1,4 +1,4 @@
-#/bin/sh -i
+#/bin/sh 
 
 # get the basename of the path
 # e.g basename a/b/c/d
