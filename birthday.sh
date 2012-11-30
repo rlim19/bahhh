@@ -1,4 +1,4 @@
-#/bin/sh -i
+#/bin/sh 
 
 grep -i "$1" <<+
 Mom   November 10
