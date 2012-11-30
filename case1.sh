@@ -1,4 +1,4 @@
-#/bin/sh -i
+#/bin/sh 
 
 echo -n "Enter A, B, or C: "
 read letter
